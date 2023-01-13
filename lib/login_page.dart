@@ -114,8 +114,8 @@ class _LoginPageState extends State<LoginPage> {
                   child: const Text(
                     'Forgot Password?',
                     style: TextStyle(
-                        color: Color(0xff1E2D4C),
-                        decoration: TextDecoration.underline),
+                      color: Color(0xff1E2D4C),
+                    ),
                   ))
             ],
           ),
