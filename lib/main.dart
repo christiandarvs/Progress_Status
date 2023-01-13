@@ -8,9 +8,13 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const MaterialApp(
+    return MaterialApp(
         title: 'Material App',
         debugShowCheckedModeBanner: false,
-        home: LoginPage());
+        theme: ThemeData().copyWith(
+            colorScheme: ThemeData()
+                .colorScheme
+                .copyWith(primary: const Color(0xff1E2D4C))),
+        home: const LoginPage());
   }
 }
