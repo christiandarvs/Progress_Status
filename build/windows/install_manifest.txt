@@ -1,0 +1,13 @@
+C:/Users/Chris/FlutterProjects/progress_check/build/windows/runner/Debug/data/icudtl.dat
+C:/Users/Chris/FlutterProjects/progress_check/build/windows/runner/Debug/flutter_windows.dll
+C:/Users/Chris/FlutterProjects/progress_check/build/windows/runner/Debug/data/flutter_assets/AssetManifest.json
+C:/Users/Chris/FlutterProjects/progress_check/build/windows/runner/Debug/data/flutter_assets/FontManifest.json
+C:/Users/Chris/FlutterProjects/progress_check/build/windows/runner/Debug/data/flutter_assets/fonts/MaterialIcons-Regular.otf
+C:/Users/Chris/FlutterProjects/progress_check/build/windows/runner/Debug/data/flutter_assets/images/developer%20(1).png
+C:/Users/Chris/FlutterProjects/progress_check/build/windows/runner/Debug/data/flutter_assets/images/developer%20(2).png
+C:/Users/Chris/FlutterProjects/progress_check/build/windows/runner/Debug/data/flutter_assets/images/developer.png
+C:/Users/Chris/FlutterProjects/progress_check/build/windows/runner/Debug/data/flutter_assets/images/splash-logo.png
+C:/Users/Chris/FlutterProjects/progress_check/build/windows/runner/Debug/data/flutter_assets/kernel_blob.bin
+C:/Users/Chris/FlutterProjects/progress_check/build/windows/runner/Debug/data/flutter_assets/NOTICES.Z
+C:/Users/Chris/FlutterProjects/progress_check/build/windows/runner/Debug/data/flutter_assets/packages/cupertino_icons/assets/CupertinoIcons.ttf
+C:/Users/Chris/FlutterProjects/progress_check/build/windows/runner/Debug/data/flutter_assets/shaders/ink_sparkle.frag
