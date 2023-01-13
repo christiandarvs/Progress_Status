@@ -13,7 +13,8 @@ final usernameController = TextEditingController();
 final passwordController = TextEditingController();
 String username = '';
 String password = '';
-const errorText = 'Incorrect Username/Password';
+const errorUsername = 'Incorrect Username';
+const errorPassword = 'Incorrect Password';
 bool incorrectDetails = false;
 
 class _LoginPageState extends State<LoginPage> {
@@ -41,7 +42,7 @@ class _LoginPageState extends State<LoginPage> {
                   },
                   textInputAction: TextInputAction.next,
                   decoration: InputDecoration(
-                      errorText: incorrectDetails ? errorText : null,
+                      errorText: incorrectDetails ? errorUsername : null,
                       labelText: 'Username',
                       border: OutlineInputBorder(
                           borderRadius: BorderRadius.circular(15))),
@@ -67,7 +68,7 @@ class _LoginPageState extends State<LoginPage> {
                           password = '';
                         },
                       ),
-                      errorText: incorrectDetails ? errorText : null,
+                      errorText: incorrectDetails ? errorPassword : null,
                       border: OutlineInputBorder(
                           borderRadius: BorderRadius.circular(15))),
                 ),
