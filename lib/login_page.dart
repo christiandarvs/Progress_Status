@@ -36,6 +36,7 @@ class _LoginPageState extends State<LoginPage> {
                 padding:
                     const EdgeInsets.symmetric(horizontal: 30, vertical: 15),
                 child: TextField(
+                  cursorColor: const Color(0xff1E2D4C),
                   controller: usernameController,
                   onSubmitted: (value) {
                     username = usernameController.text;
@@ -52,7 +53,9 @@ class _LoginPageState extends State<LoginPage> {
                 padding:
                     const EdgeInsets.symmetric(horizontal: 30, vertical: 15),
                 child: TextFormField(
+                  cursorColor: const Color(0xff1E2D4C),
                   controller: passwordController,
+                  obscureText: true,
                   onChanged: (value) {
                     password = passwordController.text;
                   },
