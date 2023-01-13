@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:progress_check/account.dart';
 import 'package:progress_check/content.dart';
 import 'package:progress_check/gallery.dart';
+import 'package:progress_check/login_page.dart';
 
 class HomePage extends StatefulWidget {
   const HomePage({super.key});
@@ -44,6 +45,22 @@ class _HomePageState extends State<HomePage> {
             iconColor: Colors.black,
             title: const Text('Close Drawer'),
             leading: const Icon(Icons.close),
+          ),
+          ListTile(
+            onTap: () {
+              Navigator.push(context, MaterialPageRoute(builder: ((context) {
+                return const LoginPage();
+              })));
+              usernameController.clear();
+              passwordController.clear();
+              username = '';
+              password = '';
+            },
+            title: const Text('Log out'),
+            leading: const Icon(
+              Icons.logout,
+              color: Colors.black,
+            ),
           )
         ],
       )),
