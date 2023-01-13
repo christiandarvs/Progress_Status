@@ -30,7 +30,7 @@ class AccountPage extends StatelessWidget {
               const Padding(
                 padding: EdgeInsets.all(15.0),
                 child: Text(
-                  'Hi, I\'m Christian! I\'m currently a 1st year BSCS student from DLSU-D. Also, I\'m a content creator on TikTok that creates Programming related videos. I like to play video games, but for now, I\'ll spend my time upskilling.',
+                  'Hi, I\'m Christian! Currently a 1st year BSCS student from DLSU-D. Also, I\'m a content creator on TikTok that creates Programming related videos. I like to play video games, but for now, I\'ll spend my time learning Flutter.',
                   style: TextStyle(fontSize: 16, letterSpacing: 1),
                   textAlign: TextAlign.justify,
                 ),
@@ -43,8 +43,12 @@ class AccountPage extends StatelessWidget {
                   textAlign: TextAlign.justify,
                 ),
               ),
-              const SizedBox(
-                height: 10,
+              const Padding(
+                padding: EdgeInsets.all(8.0),
+                child: Divider(
+                  thickness: 1,
+                  color: Colors.black,
+                ),
               ),
               const Text(
                 'Known Programming Languages:',
@@ -73,7 +77,7 @@ class AccountPage extends StatelessWidget {
                 mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                 children: const [
                   Text(
-                    'C++',
+                    'Kotlin',
                     style: TextStyle(fontSize: 16, letterSpacing: 1),
                   ),
                   Text(
@@ -83,7 +87,23 @@ class AccountPage extends StatelessWidget {
                 ],
               ),
               const SizedBox(
-                height: 20,
+                height: 15,
+              ),
+              Row(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: const [
+                  Text(
+                    'C++',
+                    style: TextStyle(fontSize: 16, letterSpacing: 1),
+                  ),
+                ],
+              ),
+              const Padding(
+                padding: EdgeInsets.all(8.0),
+                child: Divider(
+                  thickness: 1,
+                  color: Colors.black,
+                ),
               ),
               const Text(
                 'Favorite Life Quote:',
