@@ -19,24 +19,31 @@ class MainContent extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return SafeArea(
-      child: Center(
-        child: Column(mainAxisAlignment: MainAxisAlignment.center, children: [
-          Text(
-            'Welcome back, Christian!',
-            style: GoogleFonts.raleway(fontSize: 30),
-          ),
-          const SizedBox(
-            height: 15,
-          ),
-          Padding(
-            padding: const EdgeInsets.all(8.0),
-            child: Image.network(
-              'https://media0.giphy.com/media/L1R1tvI9svkIWwpVYr/giphy.gif?cid=ecf05e471hqjd07t3r0yk9bw86ij0ca352uajnfh500wz75r&rid=giphy.gif&ct=g',
-              fit: BoxFit.cover,
+    return Scaffold(
+      backgroundColor: const Color(0xffF2F7FF),
+      body: SafeArea(
+        child: Center(
+          child: Column(mainAxisAlignment: MainAxisAlignment.center, children: [
+            Text(
+              'Welcome back, Christian!',
+              style: GoogleFonts.raleway(
+                  fontSize: 26, fontWeight: FontWeight.bold),
             ),
-          ),
-        ]),
+            const SizedBox(
+              height: 15,
+            ),
+            Padding(
+              padding: const EdgeInsets.all(15.0),
+              child: ClipRRect(
+                borderRadius: BorderRadius.circular(10),
+                child: Image.network(
+                  'https://media0.giphy.com/media/L1R1tvI9svkIWwpVYr/giphy.gif?cid=ecf05e471hqjd07t3r0yk9bw86ij0ca352uajnfh500wz75r&rid=giphy.gif&ct=g',
+                  fit: BoxFit.cover,
+                ),
+              ),
+            ),
+          ]),
+        ),
       ),
     );
   }

@@ -19,17 +19,20 @@ class Gallery extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.grey.shade200,
+      backgroundColor: const Color(0xffF2F7FF),
       body: SafeArea(
           child: GridView.builder(
               itemCount: imageURL.length,
               padding: const EdgeInsets.all(8.0),
               gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
                   crossAxisCount: 2),
-              itemBuilder: ((context, index) => Card(
-                    child: Image.network(
-                      imageURL[index],
-                      fit: BoxFit.cover,
+              itemBuilder: ((context, index) => ClipRRect(
+                    borderRadius: BorderRadius.circular(15),
+                    child: Card(
+                      child: Image.network(
+                        imageURL[index],
+                        fit: BoxFit.cover,
+                      ),
                     ),
                   )))),
     );
