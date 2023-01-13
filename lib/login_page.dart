@@ -94,6 +94,8 @@ class _LoginPageState extends State<LoginPage> {
                           incorrectDetails = true;
                         }
                       });
+                      debugPrint('Username: $username');
+                      debugPrint('Password: $password');
                     }),
                     style: ElevatedButton.styleFrom(
                         backgroundColor: const Color(0xff1E2D4C)),
