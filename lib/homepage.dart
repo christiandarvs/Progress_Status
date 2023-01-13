@@ -13,13 +13,15 @@ class HomePage extends StatefulWidget {
 
 int currentIndex = 0;
 final _pages = [const MainContent(), const Gallery(), const AccountPage()];
+final appBarNames = ['Home', 'Gallery', 'Account'];
 
 class _HomePageState extends State<HomePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: Colors.grey.shade200,
       appBar: AppBar(
-        title: const Text('Sheesh'),
+        title: Text(appBarNames[currentIndex]),
         elevation: 0,
         backgroundColor: Colors.teal,
       ),
@@ -55,6 +57,8 @@ class _HomePageState extends State<HomePage> {
               passwordController.clear();
               username = '';
               password = '';
+              debugPrint('Username: $username');
+              debugPrint('Password: $password');
             },
             title: const Text('Log out'),
             leading: const Icon(
