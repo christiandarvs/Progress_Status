@@ -32,20 +32,17 @@ class _HomePageState extends State<HomePage> {
               const UserAccountsDrawerHeader(
                   decoration: BoxDecoration(
                       image: DecorationImage(
-                          image: NetworkImage(
-                              'https://images.pexels.com/photos/139038/pexels-photo-139038.jpeg?auto=compress&cs=tinysrgb&w=600'),
+                          image: AssetImage('images/controller.jpg'),
                           fit: BoxFit.cover)),
                   currentAccountPicture: CircleAvatar(
-                    backgroundImage: NetworkImage(
-                        'https://scontent.fmnl25-1.fna.fbcdn.net/v/t39.30808-6/306797224_154788703853657_4201603360433828675_n.jpg?_nc_cat=105&ccb=1-7&_nc_sid=09cbfe&_nc_eui2=AeH6HgZcyAlnBfPeuzh8-eADmZZNTvYgsJaZlk1O9iCwlsh-SxS7X5xIpTNSOJKQjhSpP7IerOMwFySZAioWJLTn&_nc_ohc=MPFatFO8POQAX-HrgAS&_nc_ht=scontent.fmnl25-1.fna&oh=00_AfBSYusY_6QWsRs8uWiOoq54XWfVi0bpBsV0VenGariePg&oe=63C4C65F'),
-                  ),
+                      backgroundImage: AssetImage('images/dp.jpg')),
                   accountName: Text('christiandarvs'),
                   accountEmail: Text('myacc@gmail.com')),
               ListTile(
                 onTap: () {
                   Navigator.pop(context);
                 },
-                iconColor: Colors.black,
+                iconColor: const Color(0Xff6C74E1),
                 title: const Text('Close Drawer'),
                 leading: const Icon(Icons.close),
               ),
@@ -65,7 +62,7 @@ class _HomePageState extends State<HomePage> {
                 title: const Text('Log out'),
                 leading: const Icon(
                   Icons.logout,
-                  color: Colors.black,
+                  color: Color(0Xff6C74E1),
                 ),
               )
             ],
@@ -74,7 +71,7 @@ class _HomePageState extends State<HomePage> {
       bottomNavigationBar: BottomNavigationBar(
         showSelectedLabels: false,
         showUnselectedLabels: false,
-        fixedColor: Colors.black,
+        fixedColor: const Color(0Xff6C74E1),
         items: const [
           BottomNavigationBarItem(icon: Icon(Icons.home), label: 'Home'),
           BottomNavigationBarItem(icon: Icon(Icons.image), label: 'Feed'),
