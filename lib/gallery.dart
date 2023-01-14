@@ -1,16 +1,18 @@
 import 'package:flutter/material.dart';
 
 final imageURL = [
-  'https://images.pexels.com/photos/402028/pexels-photo-402028.jpeg?auto=compress&cs=tinysrgb&w=1600',
-  'https://images.pexels.com/photos/4254555/pexels-photo-4254555.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
-  'https://images.pexels.com/photos/4356144/pexels-photo-4356144.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
-  'https://images.pexels.com/photos/6791741/pexels-photo-6791741.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
-  'https://images.pexels.com/photos/777059/pexels-photo-777059.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
-  'https://images.pexels.com/photos/2848492/pexels-photo-2848492.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
-  'https://images.pexels.com/photos/2064827/pexels-photo-2064827.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
-  'https://images.pexels.com/photos/165505/pexels-photo-165505.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
-  'https://images.pexels.com/photos/5707602/pexels-photo-5707602.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
-  'https://images.pexels.com/photos/2387873/pexels-photo-2387873.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
+  'images/image1.jpeg',
+  'images/image2.jpeg',
+  'images/image3.jpeg',
+  'images/image4.webp',
+  'images/image5.jpeg',
+  'images/image6.jpeg',
+  'images/image7.jpeg',
+  'images/image8.webp',
+  'images/image9.jpeg',
+  'images/image10.jpeg',
+  'images/image11.jpeg',
+  'images/image12.jpg',
 ];
 
 class Gallery extends StatelessWidget {
@@ -29,7 +31,7 @@ class Gallery extends StatelessWidget {
               itemBuilder: ((context, index) => ClipRRect(
                     borderRadius: BorderRadius.circular(15),
                     child: Card(
-                      child: Image.network(
+                      child: Image.asset(
                         imageURL[index],
                         fit: BoxFit.cover,
                       ),

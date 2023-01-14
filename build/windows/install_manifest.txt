@@ -8,6 +8,7 @@ C:/Users/Chris/FlutterProjects/progress_check/build/windows/runner/Debug/data/fl
 C:/Users/Chris/FlutterProjects/progress_check/build/windows/runner/Debug/data/flutter_assets/images/developer.png
 C:/Users/Chris/FlutterProjects/progress_check/build/windows/runner/Debug/data/flutter_assets/images/splash-logo.png
 C:/Users/Chris/FlutterProjects/progress_check/build/windows/runner/Debug/data/flutter_assets/kernel_blob.bin
+C:/Users/Chris/FlutterProjects/progress_check/build/windows/runner/Debug/data/flutter_assets/NOTICES
 C:/Users/Chris/FlutterProjects/progress_check/build/windows/runner/Debug/data/flutter_assets/NOTICES.Z
 C:/Users/Chris/FlutterProjects/progress_check/build/windows/runner/Debug/data/flutter_assets/packages/cupertino_icons/assets/CupertinoIcons.ttf
 C:/Users/Chris/FlutterProjects/progress_check/build/windows/runner/Debug/data/flutter_assets/shaders/ink_sparkle.frag
