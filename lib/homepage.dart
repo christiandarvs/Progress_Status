@@ -13,7 +13,7 @@ class HomePage extends StatefulWidget {
 
 int currentIndex = 0;
 final _pages = [const MainContent(), const Gallery(), const AccountPage()];
-final appBarNames = ['Home', 'Gallery', 'Account'];
+final appBarNames = ['Home', 'Gallery', 'About Me'];
 
 class _HomePageState extends State<HomePage> {
   @override
@@ -78,9 +78,9 @@ class _HomePageState extends State<HomePage> {
         fixedColor: const Color(0Xff6C74E1),
         items: const [
           BottomNavigationBarItem(icon: Icon(Icons.home), label: 'Home'),
-          BottomNavigationBarItem(icon: Icon(Icons.image), label: 'Feed'),
+          BottomNavigationBarItem(icon: Icon(Icons.image), label: 'Gallery'),
           BottomNavigationBarItem(
-              icon: Icon(Icons.account_circle_outlined), label: 'Account'),
+              icon: Icon(Icons.account_circle_outlined), label: 'About Me'),
         ],
         currentIndex: currentIndex,
         onTap: (value) {
