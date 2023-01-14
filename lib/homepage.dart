@@ -38,31 +38,35 @@ class _HomePageState extends State<HomePage> {
                       backgroundImage: AssetImage('images/dp.jpg')),
                   accountName: Text('christiandarvs'),
                   accountEmail: Text('myacc@gmail.com')),
-              ListTile(
-                onTap: () {
-                  Navigator.pop(context);
-                },
-                iconColor: const Color(0Xff6C74E1),
-                title: const Text('Close Drawer'),
-                leading: const Icon(Icons.close),
+              Card(
+                child: ListTile(
+                  onTap: () {
+                    Navigator.pop(context);
+                  },
+                  iconColor: const Color(0Xff6C74E1),
+                  title: const Text('Close Drawer'),
+                  leading: const Icon(Icons.close),
+                ),
               ),
-              ListTile(
-                onTap: () {
-                  Navigator.push(context,
-                      MaterialPageRoute(builder: ((context) {
-                    return const LoginPage();
-                  })));
-                  usernameController.clear();
-                  passwordController.clear();
-                  username = '';
-                  password = '';
-                  debugPrint('Username: $username');
-                  debugPrint('Password: $password');
-                },
-                title: const Text('Log out'),
-                leading: const Icon(
-                  Icons.logout,
-                  color: Color(0Xff6C74E1),
+              Card(
+                child: ListTile(
+                  onTap: () {
+                    Navigator.push(context,
+                        MaterialPageRoute(builder: ((context) {
+                      return const LoginPage();
+                    })));
+                    usernameController.clear();
+                    passwordController.clear();
+                    username = '';
+                    password = '';
+                    debugPrint('Username: $username');
+                    debugPrint('Password: $password');
+                  },
+                  title: const Text('Log out'),
+                  leading: const Icon(
+                    Icons.logout,
+                    color: Color(0Xff6C74E1),
+                  ),
                 ),
               )
             ],
